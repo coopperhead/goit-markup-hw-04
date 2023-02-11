@@ -1,0 +1,435 @@
+/*---------------------------------------------------------------- MAIN STYLES ----------------------------------------------------------------*/
+
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #404bbf;
+  --primary-brand-color: #4d5ae5;
+  --light-color: #f4f4fd;
+  --white-color: #ffffff;
+  --subtle-backgrounds-color: #e7e9fc;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*---------------------------------------------------------------- HEADER ----------------------------------------------------------------*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--subtle-backgrounds-color);
+}
+
+.header-logo {
+  color: var(--primary-brand-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  margin-right: 76px;
+}
+
+.logo-item {
+  color: var(--title-text-color);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list .link {
+  font-style: normal;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.link.current {
+  color: var(--accent-color);
+}
+
+/*---------------------------------------------------------------- HERO ----------------------------------------------------------------*/
+
+.hero {
+  background-color: var(--title-text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-container {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  line-height: 1.07;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.hero-btn {
+  font-family: inherit;
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  display: block;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/*---------------------------------------------------------------- FEATURES ----------------------------------------------------------------*/
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 8px;
+}
+
+.feature-list .text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.activities-section {
+  padding-bottom: 120px;
+}
+
+.activities-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+/*---------------------------------------------------------------- OUR TEAM ----------------------------------------------------------------*/
+
+.team-section {
+  background-color: var(--light-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-list .text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card-wraper {
+  padding: 32px 16px;
+  background-color: var(--white-color);
+}
+
+.team-item {
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 2px 1px rgb(46 47 66 / 8%);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.list {
+}
+.team-soc-item,
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+
+.team-soc-icon,
+.footer-soc-icon {
+  fill: var(--light-color);
+}
+
+.link {
+}
+
+
+.customers-section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+
+/*---------------------------------------------------------------- FOOTER ----------------------------------------------------------------*/
+
+footer {
+  background-color: var(--title-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  color: var(--primary-brand-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-logo .logo-item {
+  color: var(--light-color);
+}
+
+footer .text {
+  color: var(--subtle-backgrounds-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-container .text {
+  width: 264px;
+  margin-top: 16px;
+}
+
+
+/*---------------------------------------------------------------- PORTFOLIO ----------------------------------------------------------------*/
+
+.filters {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn {
+  border: 1px solid var(--subtle-backgrounds-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.filters-list .filters-btn {
+  color: var(--primary-brand-color);
+  background: var(--light-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.filters-list .filters-btn:hover,
+.filters-list .filters-btn:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+}
+
+/*---------------------------------------------------------------- LIST OF CARDS ----------------------------------------------------------------*/
+
+.cards-title {
+  font-family: Roboto, sans-serif;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.cards-text {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+
+.cards-container {
+  display: block;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.cards-list-item {
+  color: var(--white-color);
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 48px 24px;
+}
+
+.cards-wraper {
+  padding: 32px 16px;
+}
+
+.cards-border {
+  border-left: 1px solid var(--subtle-backgrounds-color);
+  border-right: 1px solid var(--subtle-backgrounds-color);
+  border-bottom: 1px solid var(--subtle-backgrounds-color);
+}
